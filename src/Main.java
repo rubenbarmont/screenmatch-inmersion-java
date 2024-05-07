@@ -1,41 +1,25 @@
-import java.util.Scanner;
+import modelo.Pelicula;
+import modelo.Serie;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Bienvenidos a la inmersión en Java");
-        //System.out.println("Película Matrix");
-        // Declaración de variables
-        int fechaDeLanzamiento = 1999;
-        double evaluacion = 4.5;
-        boolean incluidoEnElPlanBasico = true;
-        String nombre = "Matrix";
-        String sinopsis = """
-                La mejor película del fin del milenio
-                """;
-        double mediaEvaluacionUsuario = 0;
+        Principal principal = new Principal();
+        principal.muestraElMenu();
 
-        System.out.println("Película: " + nombre);
-        System.out.println(fechaDeLanzamiento);
-        System.out.println(evaluacion);
-        System.out.println(incluidoEnElPlanBasico);
+        /*Pelicula matrix = new Pelicula();
+        matrix.setNombre("Matrix");
+        matrix.setTiempoDeDuracionEnMinutos(120);
+        matrix.setFechaDeLanzamiento(1999);
 
-        double mediaEvaluacion = (4.5 + 4.8 + 3) / 3;
-        System.out.println("Media de la evaluación de Matrix: " + mediaEvaluacion);
+        matrix.muestraFichaTecnica();
 
-        if (fechaDeLanzamiento >= 2023){
-            System.out.println("Película Popular en el momento");
-        } else {
-            System.out.println("Película Retro que vale la pena ver");
-        }
-
-        for (int i = 0; i < 3; i++) {
-            Scanner teclado = new Scanner(System.in);
-            System.out.print("Ingresa la nota que le darias a Matrix: ");
-            double notaMatrix = teclado.nextDouble();
-            mediaEvaluacionUsuario = mediaEvaluacionUsuario + notaMatrix;
-        }
-        System.out.print("La media de la película Matrix calculada por el usuario es: " + mediaEvaluacionUsuario / 3);
-
+        Serie friends = new Serie();
+        friends.setNombre("Friends");
+        friends.setFechaDeLanzamiento(1996);
+        friends.setTemporadas(10);
+        friends.setEpisodiosPorTemporada(22);
+        friends.setDuracionEnMinutosPorEpisodio(30);
+        friends.muestraFichaTecnica();*/
 
     }
 }
